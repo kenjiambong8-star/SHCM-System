@@ -1,0 +1,53 @@
+.app { min-height: 100vh; display: grid; grid-template-columns: 230px 1fr; }
+.nav { background: #0F4D3D; padding: 28px 16px; display: flex; flex-direction: column; gap: 4px; }
+.nav .logo { color: #fff; font-size: 22px; font-weight: 700; padding: 0 14px 24px; }
+.nav a { color: #E8F3EE; text-decoration: none; padding: 11px 14px; border-radius: 8px; font-size: 15px; font-weight: 400; }
+.nav a.on { background: #1B6A55; font-weight: 700; }
+.nav form { margin-top: auto; }
+.nav .out { width: 100%; text-align: left; background: none; border: 0; color: #E8F3EE; padding: 11px 14px; font: inherit; font-size: 15px; cursor: pointer; border-radius: 8px; }
+.nav .who { color: #BFD8CD; font-size: 12px; padding: 0 14px 10px; }
+.main { padding: 32px; max-width: 1160px; width: 100%; }
+.top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+.top h1 { margin: 0; font-size: 28px; }
+.card { background: #fff; border: 1px solid #DDE4DF; border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+.k { font-size: 13px; color: #4A5A52; margin: 0 0 8px; }
+.v { font-size: 28px; font-weight: 700; margin: 0; }
+.bp, .bs, .bd { display: inline-block; border-radius: 8px; padding: 9px 16px; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; text-decoration: none; border: 1px solid transparent; }
+.bp { background: #0F6E56; color: #fff; }
+.bs { background: #fff; color: #14201B; border-color: #9AA8A0; font-weight: 500; }
+.bd { background: #fff; color: #A32D2D; border-color: #A32D2D; font-weight: 500; }
+.sm { padding: 5px 10px; font-size: 12px; }
+.sel { height: 40px; border: 1px solid #9AA8A0; border-radius: 8px; padding: 0 12px; font: inherit; background: #fff; }
+.filters { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; }
+.filters label { display: block; font-size: 12px; color: #4A5A52; margin-bottom: 4px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; font-size: 12px; color: #4A5A52; font-weight: 500; padding: 8px 6px; border-bottom: 1px solid #DDE4DF; }
+td { padding: 12px 6px; border-bottom: 1px solid #EEF2EF; }
+.f select { width: 100%; height: 46px; border: 1px solid #9AA8A0; border-radius: 8px; padding: 0 14px; font: inherit; background: #fff; }
+.formcard { max-width: 520px; }
+@media (max-width: 900px) { .app { grid-template-columns: 1fr; } .nav { display: none; } .main { padding: 16px; } }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 16px; }
+.stats .card { margin: 0; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-bottom: 16px; }
+.grid2 .card { margin: 0; }
+.chartbox { position: relative; height: 240px; }
+.logrow { margin: 0 0 12px; font-size: 14px; }
+.logrow span { display: block; font-size: 12px; color: #4A5A52; }
+:focus-visible { outline: 3px solid #5B9BD5; outline-offset: 2px; }
+tr:hover td { background: #F6F9F7; }
+.mbar { display: none; }
+.tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+.tabs a { padding: 9px 16px; border-radius: 8px; border: 1px solid #9AA8A0; background: #fff; color: #14201B; text-decoration: none; font-size: 14px; }
+.tabs a.on { background: #0F6E56; border-color: #0F6E56; color: #fff; font-weight: 700; }
+.pager { display: flex; gap: 8px; align-items: center; margin-top: 14px; flex-wrap: wrap; font-size: 14px; }
+.inline { display: inline-flex; gap: 6px; align-items: center; margin: 0 4px 6px 0; }
+.inline input, .inline select { height: 34px; border: 1px solid #9AA8A0; border-radius: 6px; padding: 0 8px; font: inherit; font-size: 13px; background: #fff; }
+.banner { padding: 14px 18px; border-radius: 10px; font-weight: 700; margin-bottom: 16px; }
+.banner.ok { background: #E1F5EE; color: #085041; }
+.banner.no { background: #FCEBEB; color: #791F1F; }
+.bar2 { display: flex; gap: 8px; flex-wrap: wrap; }
+@media (max-width: 900px) {
+  .mbar { display: flex; align-items: center; gap: 12px; background: #0F4D3D; color: #fff; padding: 12px 16px; position: sticky; top: 0; z-index: 5; font-weight: 700; }
+  .mbar button { background: #1B6A55; color: #fff; border: 0; border-radius: 8px; padding: 8px 14px; font: inherit; cursor: pointer; }
+  .nav.open { display: flex; }
+}

@@ -1,0 +1,76 @@
+:root{--ink:#10231C;--mute:#475E54;--bg:#F2F7F4;--deep:#0F4D3D;--green:#0F6E56;--line:#D5E2DB}
+*{box-sizing:border-box}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;font-family:"Public Sans",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px}
+h1,h2,h3,.brand,.name,.n{font-family:"Bricolage Grotesque","Public Sans",sans-serif}
+h1,h2,h3{margin:0;line-height:1.1}
+:focus-visible{outline:3px solid #2F6FD6;outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:16px}
+.brand{font-weight:800;font-size:22px;color:var(--deep);text-decoration:none}
+.nav nav{display:flex;align-items:center;gap:22px}
+.lnk{color:var(--mute);text-decoration:none;font-weight:500;font-size:15px}
+.lnk:hover{color:var(--deep);text-decoration:underline}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;border:2px solid transparent;font-size:16px}
+.btn-p{background:var(--green);color:#fff}
+.btn-p:hover{background:var(--deep)}
+.btn-s{border-color:var(--deep);color:var(--deep);background:transparent}
+.btn-s:hover{background:#E1EDE7}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center;padding:48px 0 96px}
+.hero h1{font-size:clamp(38px,5.4vw,64px);font-weight:800;letter-spacing:-.02em}
+.lead{font-size:20px;color:var(--mute);max-width:32em;margin:22px 0 32px}
+
+.slip{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;transform:rotate(1.2deg);
+  box-shadow:0 2px 0 var(--line),0 24px 44px -28px rgba(15,77,61,.5)}
+.slip header{display:flex;justify-content:space-between;gap:12px;padding-bottom:14px;border-bottom:2px dashed var(--line)}
+.name{font-size:22px;font-weight:800}
+.slip small{color:var(--mute);font-size:13px}
+.slip ul{list-style:none;margin:0;padding:0}
+.slip li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid #EAF1ED;font-size:15px}
+.badge{display:inline-block;padding:3px 11px;border-radius:99px;font-size:12px;font-weight:600;white-space:nowrap}
+.badge.ok{background:#E1F5EE;color:#085041}
+.badge.wait{background:#FAEEDA;color:#633806}
+.badge.bad{background:#FCEBEB;color:#791F1F}
+.slip footer{margin-top:18px;display:flex;align-items:center;gap:14px}
+.meter{flex:1;height:8px;border-radius:99px;background:#E4EDE8;overflow:hidden}
+.meter i{display:block;height:100%;width:60%;background:var(--green)}
+
+.sec{padding:72px 0;border-top:1px solid var(--line)}
+.sec h2{font-size:clamp(28px,3.6vw,40px);font-weight:800;letter-spacing:-.01em;max-width:18em;margin-bottom:36px}
+
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.steps li{border-top:3px solid var(--deep);padding-top:16px}
+.n{display:block;font-size:34px;font-weight:800;color:var(--green);line-height:1;margin-bottom:10px}
+.steps h3{font-size:19px;margin-bottom:6px}
+.steps p{margin:0;color:var(--mute);font-size:15px}
+
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:28px 56px;margin:0}
+.feat dt{font-weight:600;font-size:18px;margin-bottom:4px}
+.feat dd{margin:0;color:var(--mute);font-size:16px}
+
+.band{background:var(--deep);color:#fff;border-radius:20px;border-top:0;padding:56px;margin:24px 0}
+.band h2{color:#fff}
+.sec-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:16px 40px}
+.sec-list li{padding-left:28px;position:relative;color:#E3F1EA}
+.sec-list li::before{content:"\2713";position:absolute;left:0;color:#8EE0BE;font-weight:700}
+
+.final{text-align:left}
+.final h2{margin-bottom:24px}
+.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:28px 0 40px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;gap:40px;padding-bottom:64px}
+  .slip{transform:none}
+  .steps{grid-template-columns:1fr 1fr}
+  .lnk{display:none}
+}
+@media (max-width:640px){
+  .steps,.feat,.sec-list{grid-template-columns:1fr}
+  .band{padding:32px 24px}
+  .sec{padding:48px 0}
+}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{height:40px;width:auto;display:block}

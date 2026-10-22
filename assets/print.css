@@ -1,0 +1,20 @@
+body { font-family: Arial, Helvetica, sans-serif; color: #000; background: #eee; margin: 0; }
+.bar { background: #0F4D3D; color: #fff; padding: 10px 20px; display: flex; gap: 10px; align-items: center; }
+.pbtn { background: #fff; color: #0F4D3D; border: 0; border-radius: 6px; padding: 8px 16px; font: inherit; font-weight: 700; cursor: pointer; }
+.sheet { background: #fff; max-width: 900px; margin: 20px auto; padding: 40px; }
+.rh { text-align: center; border-bottom: 2px solid #000; padding-bottom: 12px; margin-bottom: 16px; }
+.rh h1 { font-size: 16px; margin: 0 0 4px; }
+.rh h2 { font-size: 20px; margin: 0; }
+.rh p { margin: 6px 0 0; font-size: 12px; }
+.sum { font-size: 13px; margin: 0 0 12px; }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th, td { border: 1px solid #444; padding: 6px 8px; text-align: left; }
+th { background: #eee; }
+.badge { border: 1px solid #333; border-radius: 8px; padding: 1px 6px; font-size: 11px; }
+.status { font-size: 22px; font-weight: 700; text-align: center; border: 2px solid #000; padding: 12px; margin: 16px 0; }
+.rf { margin-top: 48px; }
+.sig { display: flex; justify-content: space-between; gap: 40px; font-size: 13px; }
+.sig div { flex: 1; text-align: center; }
+.sig span { display: block; border-bottom: 1px solid #000; height: 36px; margin-bottom: 4px; }
+.gen { font-size: 11px; color: #444; margin-top: 24px; }
+@media print { body { background: #fff; } .noprint { display: none; } .sheet { margin: 0; padding: 0; max-width: none; } }
